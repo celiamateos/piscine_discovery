@@ -1,0 +1,58 @@
+.table {
+    border: 0;
+    width: 25%;
+    height: 100%;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.name {
+    background-color:rgb(68, 104, 104);
+    color: rgb(247, 243, 199);
+    font-size: 42px;
+    font-style: oblique;
+    width: 25%;
+    height: 100%;
+    border-spacing: 0;  
+}
+.photo {
+    background-image: url('https://cdn.intra.42.fr/users/5fe8cfdf6fa20d5138afef5e96cbb65f/cmateos-.JPG');
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.login {
+    background-color: rgb(247, 243, 199);
+    font-size: 33px;
+}
+
+.description {
+    font-size: 20px;
+    height: 50px;
+    color: lightslategrey;
+}
+
+.campus {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: lightgray;
+    height: 40px;
+}
+.icons {
+    height: 60px;
+}
+.button {
+   background-color:  rgb(198, 49, 49);
+   color: black;
+   font-size: 20px;
+   height: 70px;
+   width: 300px;
+   border: 0;
+}
+.last {
+    background-color: rgb(198, 49, 49);
+}

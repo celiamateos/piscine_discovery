@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Globo interactivo</title>
+	<style>
+		#globo {
+            margin: 500px; /* Para ponerlo en el centro de la página */
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: red;
+			cursor: pointer; /* Aparece una mano al poner el cursor encima */
+			transition: all 0.2s ease-in-out;
+		}
+	</style>
+</head>
+<body>
+	<div id="globo" onclick="ampliarglobo(10)" onmouseover="disminuirglobo(-5)"></div>
+	<script>
+		var globo = document.getElementById("globo");
+        var colors = ["red", "green", "blue"];
+        var index = 0;
+        var tamano = 200;
+    function ampliarglobo (incremento) {
+        tamano += incremento;
+        if (tamano < 200)
+            tamano = 200;
+        else if (tamano >= 420)
+            tamano = 200;
+        globo.style.height = tamano + "px";
+        globo.style.width = tamano + "px";
+        index++;
+        if (index >= colors.length){
+            index = 0;
+        }
+        globo.style.backgroundColor = colors[index];
+    }
+    function disminuirglobo(decremento) {
+        tamano += decremento;
+        if (tamano < 200)
+            tamano = 200;
+        else if (tamano >= 420)
+            tamano = 200;
+        globo.style.height = tamano + "px";
+        globo.style.width = tamano + "px";
+        index--;
+        if (index < 0){
+            index = 2;
+        }
+        globo.style.backgroundColor = colors[index];
+    }
+	</script>
+</body>
+</html>
